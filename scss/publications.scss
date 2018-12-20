@@ -8,7 +8,7 @@ $gray-col:#ecf2f7;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
     padding: 2%;
     .title{
     color:$secondary-col;
@@ -16,6 +16,7 @@ $gray-col:#ecf2f7;
 
 .list{
     width:80%;
+    align-self: center;
     color: $secondary-col;
     background: $bg;
     padding: 2%;

@@ -1,14 +1,18 @@
 .interests{
+    padding: 2%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-between;
-    flex-direction: row;
-}
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
 .research{
-    padding:2%;
-    width:25%;
-    text-align: justify;
+    padding: 1%;
+    width: 400px;
+    text-align: center;
 }
 .title{
     padding:3%;

@@ -1,0 +1,16 @@
+#contact {
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  flex: wrap;
+  justify-content: center;
+  align-items: center; }
+
+p#emaildomain::after {
+  content: "13\40heartinternet.uk"; }
+
+span#emailname::before {
+  content: "example"; }
+
+span#botblocker {
+  display: none; }
