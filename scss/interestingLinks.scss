@@ -9,7 +9,8 @@
     color: $primary-col;
     text-align: center;
     a{
-        color: $font-col;
+        word-wrap: break-word;
+        color: $primary-col;
         font-weight: 100;
         &a:hover {
         color: darken($primary-col, 40%);
