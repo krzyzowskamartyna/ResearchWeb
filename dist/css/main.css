@@ -1,22 +1,44 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
-.container .navbar {
-  width: 100%;
-  overflow: hidden;
-  background: #181817;
-  position: relative;
-  height: 60px;
-  top: 0;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-  text-transform: uppercase; }
-
-.container ul {
-  list-style: none;
-  display: inline;
-  padding: 1%;
+#publications {
+  background: #ecf2f7;
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-evenly; }
+  color: #fefdfd;
+  height: 50vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  flex-direction: column;
+  padding: 2%; }
+  #publications .title {
+    color: #181817; }
+  #publications .list {
+    width: 80%;
+    align-self: center;
+    color: #181817;
+    background: #fefdfd;
+    padding: 2%; }
+  #publications li {
+    list-style: none; }
+
+.container {
+  background: #ecf2f7; }
+  .container .navbar {
+    width: 100%;
+    overflow: hidden;
+    background: #181817;
+    position: relative;
+    height: 60px;
+    top: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    text-transform: uppercase; }
+  .container ul {
+    list-style: none;
+    display: inline;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly; }
 
 @media only screen and (min-width: 601px) {
   .mobile {
@@ -36,6 +58,9 @@
     user-select: none; }
   #menuToggle input {
     display: flex;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
     position: absolute;
     cursor: pointer;
     opacity: 0;
@@ -70,7 +95,7 @@
     position: absolute;
     margin: -50px 0 0 -50px;
     padding: 50px;
-    padding-top: 125px;
+    padding-top: 100px;
     width: 100vw;
     background-color: #181817;
     -webkit-font-smoothing: antialiased;
@@ -218,7 +243,7 @@
   display: inline-block;
   cursor: pointer;
   width: 100%;
-  height: 95px;
+  height: 90px;
   border-radius: 5px;
   border: solid 1px #181817;
   overflow: hidden;

@@ -1,7 +1,8 @@
 $primary-col:#181817;
 $font-col: #fefdfd;
-
+@import "publications";
 .container {
+  background: $gray-col;
     .navbar{
         width: 100%;
         overflow: hidden;
@@ -38,7 +39,6 @@ $font-col: #fefdfd;
         position: relative;
         top: 25px;
         left: 25px;
-        
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
@@ -47,7 +47,9 @@ $font-col: #fefdfd;
       #menuToggle input
       {
         display: flex;
-        
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
         position: absolute;
         cursor: pointer;
         opacity: 0;
@@ -104,7 +106,7 @@ $font-col: #fefdfd;
         position: absolute;
         margin: -50px 0 0 -50px;
         padding: 50px;
-        padding-top: 125px;
+        padding-top: 100px;
         width: 100vw;
         background-color: $primary-col;
         -webkit-font-smoothing: antialiased;
