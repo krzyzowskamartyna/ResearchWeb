@@ -1,0 +1,25 @@
+
+#interestingLinks{
+    background: url(../../img/img-3.jpeg) no-repeat center center fixed;
+    position: relative;
+    padding: 5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $primary-col;
+    text-align: center;
+    a{
+        color: $font-col;
+        font-weight: 100;
+        &a:hover {
+        color: darken($primary-col, 40%);
+         }
+      &a:active {
+        background-color: black;
+      }
+    }
+    h2{
+        padding: 2%;
+        text-transform: uppercase;
+    }
+}

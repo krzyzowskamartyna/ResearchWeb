@@ -1,0 +1,25 @@
+$secondary-col: #181817;
+$gray-col:#ecf2f7;
+
+#publications{
+    background: $gray-col;
+    display: flex;
+    color: $font-col;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: row;
+    padding: 2%;
+    .title{
+    color:$secondary-col;
+    }
+
+.list{
+    width:80%;
+    color: $secondary-col;
+    background: $bg;
+    padding: 2%;
+}
+li{
+    list-style: none;
+}}

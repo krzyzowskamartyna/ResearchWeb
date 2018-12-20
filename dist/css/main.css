@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+.container .navbar {
+  width: 100%;
+  overflow: hidden;
+  background: #181817;
+  position: relative;
+  height: 60px;
+  top: 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase; }
+
+.container ul {
+  list-style: none;
+  display: inline;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-evenly; }
+
+.container .mobile {
+  display: none; }
+
+.App-header {
+  background: url(../../img/bg.svg) no-repeat center center fixed;
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  text-transform: uppercase; }
+
+.intro {
+  padding: 10%;
+  vertical-align: middle;
+  color: #181817 !important;
+  display: table-cell;
+  text-align: center;
+  z-index: 100; }
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  flex-direction: row; }
+
+.research {
+  padding: 2%;
+  width: 25%;
+  text-align: justify; }
+
+.title {
+  padding: 3%;
+  text-transform: uppercase;
+  text-align: center; }
+
+#publications {
+  background: #ecf2f7;
+  display: flex;
+  color: #fefdfd;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  flex-direction: row;
+  padding: 2%; }
+  #publications .title {
+    color: #181817; }
+  #publications .list {
+    width: 80%;
+    color: #181817;
+    background: #fefdfd;
+    padding: 2%; }
+  #publications li {
+    list-style: none; }
+
+#interestingLinks {
+  background: url(../../img/img-3.jpeg) no-repeat center center fixed;
+  position: relative;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #181817;
+  text-align: center; }
+  #interestingLinks a {
+    color: #fefdfd;
+    font-weight: 100; }
+    #interestingLinks aa:hover {
+      color: black; }
+    #interestingLinks aa:active {
+      background-color: black; }
+  #interestingLinks h2 {
+    padding: 2%;
+    text-transform: uppercase; }
+
+#group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.groupContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 2%;
+  flex: wrap; }
+
+.head {
+  width: 90%;
+  align-self: center; }
+
+.person {
+  width: calc(100% * (1/4) - 10px - 1px);
+  padding: 1%; }
+
+#card {
+  transition: all 0.6s ease;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  border: solid 1px #181817;
+  overflow: hidden;
+  color: #181817; }
+  #card .header {
+    transition: all 0.6s ease;
+    display: inline-flex;
+    width: 100%;
+    height: 30px;
+    background-color: #181817; }
+  #card .text {
+    padding: 0 8%; }
+    #card .text h3 {
+      transition: all 0.6s ease;
+      padding: 3%; }
+
+#card:hover {
+  height: auto;
+  transition: all 0.6s ease; }
+  #card:hover .header {
+    transition: all 0.6s ease; }
+
+#contact {
+  display: flex;
+  padding: 5%;
+  justify-content: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none; }
+
+body {
+  background: #fefdfd;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200; }
+
+a {
+  color: #fefdfd;
+  text-decoration: none; }
+
+h1, h2, h3 {
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.footer {
+  background: #181817;
+  padding: 4%;
+  text-align: center;
+  color: #fefdfd; }
