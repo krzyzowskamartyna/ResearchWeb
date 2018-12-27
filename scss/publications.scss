@@ -3,20 +3,17 @@ $gray-col:#ecf2f7;
 
 #publications{
     background: $gray-col;
-    display: flex;
     color: $font-col;
-    height: 50vh;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-between;
-    flex-direction: column;
-    padding: 2%;
+    padding: 3%;
     .title{
     color:$secondary-col;
     }
+    p{
+        color: $secondary-col;
+        text-align: center;
+    }
 
-.list{
-    width:80%;
+.list-group{
     align-self: center;
     color: $secondary-col;
     background: $bg;
@@ -25,3 +22,81 @@ $gray-col:#ecf2f7;
 li{
     list-style: none;
 }}
+.pub-container{
+   word-wrap: break-word;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: space-between;
+   flex-direction: column;
+
+}
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+    transition: all 0.3s;
+    &:target {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    &>div {
+      position: absolute;
+      width: 80vw;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2em;
+      background: #ffffff;
+      color: $secondary-col;
+    }
+    header {
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 150%;
+      margin: 0 0 15px;
+      color: #333333;
+    }
+  }
+  .modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    &:hover {
+      color: #000;
+    }
+  }
+  .button {
+    padding: 1em 1.5em;
+    border-radius: 3px;
+    border: solid 1px $secondary-col;
+    text-decoration: none;
+    color: $secondary-col;
+    i {
+      padding-right: 0.3em;
+    }
+  }
+  .interior{
+      display: flex;
+      padding: 2%;
+        justify-content: center;
+  }
+  
+  

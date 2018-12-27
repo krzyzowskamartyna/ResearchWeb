@@ -1,0 +1,40 @@
+{
+  "publications": [
+    {
+      "author": [
+        "Jankiewicz, W.",
+        "Podeszwa, R.",
+        "Witek, H. A."
+      ],
+      "title": "Dispersion-corrected DFT struggles with predicting three-body interaction energies.",
+      "journal": "Journal of chemical theory and computation.",
+      "year": "(2018)",
+      "link": "link"
+    },
+    {
+      "author": [
+        "Taylor, D. E.",
+        "Ángyán, J. G.",
+        "Galli, G.",
+        "Zhang, C."
+      ],
+      "title": "Blind test of density-functional-based methods on intermolecular interaction energies.",
+      "journal": "The Journal of chemical physics",
+      "year": "(2016)",
+      "link": "link"
+    },
+    {
+      "author": [
+        "Góra, U.",
+        "Cencek, W.",
+        "Podeszwa, R.",
+        "van der Avoird, A.",
+        "Szalewicz, K."
+      ],
+      "title": "Predictions for water clusters from a first-principles two-and three-body force field.",
+      "journal": "The Journal of chemical physics",
+      "year": "(2014)",
+      "link": "link"
+    }
+  ]
+}

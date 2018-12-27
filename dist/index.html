@@ -16,7 +16,7 @@
         <nav class="navbar">
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <a href="#start">Home</a>
                 </li>
                 <li>
                     <a href="#interests">Research</a>
@@ -34,14 +34,14 @@
         </nav>
 
         <nav class="mobile" role='navigation'>
-            <div id="menuToggle">
+            <div class="menuToggle">
                 <input type="checkbox" />
                 <span></span>
                 <span></span>
                 <span></span>
-                <ul id="menu">
+                <ul class="menu">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="#start">Home</a>
                     </li>
                     <li>
                         <a href="#interests">Research</a>
@@ -120,13 +120,31 @@
         <div class="title">
             <h1>Publications</h1>
         </div>
-        <div class="list">
-            <ul>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li></li>
-                <li></li>
-            </ul>
+        <div class="pub-container">
+            <p>1. Jankiewicz, W., Podeszwa, R., & Witek, H. A. (2018). Dispersion-corrected DFT struggles with
+                predicting
+                three-body interaction energies. Journal of chemical theory and computation.</p> <br>
+            <p>2. Taylor, D. E., Ángyán, J. G., Galli, G., Zhang, C., Gygi, F., Hirao, K., ... & Bulik, I. W.
+                (2016).
+                Blind test of density-functional-based methods on intermolecular interaction energies. The Journal
+                of
+                chemical physics, 145(12), 124105.</p> <br>
+            <p>3. Góra, U., Cencek, W., Podeszwa, R., van der Avoird, A., & Szalewicz, K. (2014). Predictions for
+                water
+                clusters from a first-principles two-and three-body force field. The Journal of chemical physics,
+                140(19),
+                194101.
+            </p> <br />
+            <div class="interior">
+                <a class="button" href="#open-modal"> Show More</a>
+            </div>
+            <div id="open-modal" class="modal-window">
+                <div>
+                    <a href="#" title="Close" class="modal-close">Close</a>
+                    <h1>Publications</h1>
+                    <ul class="list-group" id="result"></ul>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -216,11 +234,29 @@
         <p id="emaildomain">Please email us at
             <span id="emailname">
                 <span id="botblocker">botblocker@heartinternet.uk</span>
-            </span>.</p>
+            </span>.</p> <br />
+        <h2>Or fulfill form below</h2> <br />
     </div>
     <footer>
         <div class="footer">2018 &copy; Martyna Krzyżowska</div>
     </footer>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var response = JSON.parse(xhttp.responseText);
+                var publications = response.publications;
+                var output = '';
+                for (var i = 0; i < publications.length; i++) {
+                    output += '<li>' + publications[i].author + ', ' + publications[i].title + ', ' + publications[i].journal + ', ' + publications[i].year + ', ' + publications[i].link + '</li>' + '<br />';
+                }
+                document.getElementById('result').innerHTML = output;
+            }
+        };
+        xhttp.open("GET", "data.json", true);
+        xhttp.send();
+
+    </script>
 </body>
 
 </html>
