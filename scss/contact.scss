@@ -2,9 +2,9 @@
     display: flex;
     padding:5%;
     flex-direction: column;
-    flex:wrap;
+    flex-wrap:wrap;
+    text-align: center;
     justify-content: center;
-    align-items:center;
 }
 p#emaildomain::after {
     content: "13\40heartinternet.uk";
