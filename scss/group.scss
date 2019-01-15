@@ -1,5 +1,6 @@
  
 $color-card: rgba(236, 240, 241,1.0);
+$primary-col:#181817;
 #group{
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@ $color-card: rgba(236, 240, 241,1.0);
     align-self: center;
 }
 .person{
-    min-width: 15rem;
+    min-width: 10rem;
     padding: 1%;
 }
 .pure-toggle {
@@ -28,7 +29,7 @@ $color-card: rgba(236, 240, 241,1.0);
   display:inline-block;
   cursor:pointer;
   width:100%;
-  height:80px;
+  min-height: 200px;
   border-radius:5px;
   border: solid 1px $primary-col;
   overflow: hidden;
@@ -43,8 +44,4 @@ $color-card: rgba(236, 240, 241,1.0);
     padding: 0 1%;
 
   }
-}
-
-.pure-toggle:hover {
- height: 200px;
 }

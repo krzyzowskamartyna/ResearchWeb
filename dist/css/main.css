@@ -303,7 +303,7 @@ header {
   align-self: center; }
 
 .person {
-  min-width: 15rem;
+  min-width: 10rem;
   padding: 1%; }
 
 .pure-toggle {
@@ -312,7 +312,7 @@ header {
   display: inline-block;
   cursor: pointer;
   width: 100%;
-  height: 80px;
+  min-height: 200px;
   border-radius: 5px;
   border: solid 1px #181817;
   overflow: hidden;
@@ -324,9 +324,6 @@ header {
     background-color: #181817; }
   .pure-toggle .text {
     padding: 0 1%; }
-
-.pure-toggle:hover {
-  height: 200px; }
 
 #contact {
   display: flex;
